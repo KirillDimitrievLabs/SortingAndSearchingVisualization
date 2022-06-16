@@ -4,7 +4,7 @@ async function wait(arrayLength) {
     await new Promise((resolve) =>
         setTimeout(() => {
             resolve();
-        }, 400 / arrayLength)
+        }, 1500 / arrayLength)
     );
 }
 
