@@ -21,6 +21,12 @@ function SortSearchVizualization() {
         resetArray();
     }, [arrayLength]);
 
+    const gitHubRepo = (
+        <a href='https://github.com/KirillDimitrievLabs/SortingAndSearchingVisualization' target="_blank" rel='noreferrer'>
+            GitHub repository
+        </a>
+    );
+
 
     const arrayLengthInputTextArea = (
         <>
@@ -117,6 +123,9 @@ function SortSearchVizualization() {
 
     return(
         <div className='App'>
+            <div className='header'>
+                {gitHubRepo}
+            </div>
             <div className='elemsCollection'>
                 {htmlElementsCollection}
             </div>

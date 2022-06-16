@@ -33,14 +33,14 @@ export async function getSearch(sortedArray, key) {
         paintElem(elems, startIndex, "violet");
         paintElem(elems, endIndex, "violet");
         paintElem(elems, middleIndex, "red");
-        await wait();
+        await wait(sortedArray.length);
 
         // If middle elem equals desired number
         // paint it with green and
         // return index of the element
         if (sortedArray[middleIndex] === key) {
             paintElem(elems, middleIndex, "green");
-            await wait();
+            await wait(sortedArray.length);
             return middleIndex;
         // If middle elem bigger than desired number
         // paint old endIndex and middleIndex elems with default cyan color
@@ -51,7 +51,7 @@ export async function getSearch(sortedArray, key) {
             paintElem(elems, middleIndex, "cyan");
             endIndex = middleIndex - 1;
             paintElem(elems, endIndex, "violet");
-            await wait();
+            await wait(sortedArray.length);
         // If middle elem less than desired number
         // paint old startIndex and middleIndex elems with default cyan color
         // then set new startIndex elem as (old middleIndex - 1)
@@ -62,7 +62,7 @@ export async function getSearch(sortedArray, key) {
 
             startIndex = middleIndex + 1;
             paintElem(elems, startIndex, "violet");
-            await wait();
+            await wait(sortedArray.length);
         }
     }
     return -1;

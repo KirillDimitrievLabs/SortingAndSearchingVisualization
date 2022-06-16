@@ -4,15 +4,6 @@
     background-color:black;
 }
 
-.App {
-    display: flex;
-    width: 70%;
-    margin-top: 20%;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: center;
-}
-
 #root {
     display: flex;
     flex-direction: column;
@@ -23,13 +14,27 @@
 textarea {
     background-color: white;
     width: 10vh;
-    height: 3vh;
+    height: 2.3vh;
     resize: none;
     margin-bottom: 1vh;
+    text-align: center;
 }
 
 p {
     color: white;
+}
+
+a {
+    background-color: white;
+}
+
+.App {
+    display: flex;
+    width: 70%;
+    margin-top: 20%;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 .array {
@@ -45,8 +50,9 @@ p {
 }
 
 .btn {
-    border: none;
     margin-bottom: 1vh;
+    border-color: brown;
+    border-width: 5px;
     display: flex;
     width: 10vh;
     height: 3vh;
@@ -67,6 +73,17 @@ p {
     justify-content: center;
     flex-wrap: wrap;
 }
+
+.header{
+    display: flex;
+    position: fixed; 
+    top: 0;
+    width: 100%;
+    background-color: white;
+    justify-content: center;
+    padding: 10px 0px 10px 0px;
+}
+
 
 .footer {
     display: flex;
